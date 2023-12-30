@@ -7,11 +7,11 @@ import { createPortal } from "react-dom";
 const modalRoot = document.querySelector('#modal-root')
 
 const Modal = ({closeModal, img}) => {
-    componentDidMount() {
+    componentDidMount(); {
         window.addEventListener('keydown', handleKeyDown)
     }
 
-    componentWillUnmount() {
+    componentWillUnmount(); {
         window.removeEventListener('keydown', handleKeyDown);
     }
 

@@ -20,12 +20,14 @@ export const App = () => {
   const [showBtn, setShowBtn] = useState(false);
 
 
-  componentDidUpdate(prevProps, prevState) {
-  const  {page, search}  = state;
-    if (prevState.search !== search || prevState.page !== page) {
-      this.handleAPI();
+  componentDidUpdate(prevProps, prevState); {
+  const { page, search } = this.state;
+  
+  if (prevState.search !== search || prevState.page !== page) {
+    this.handleAPI();
     }
   }
+
 
   const onSubmitForm = state => {
     if (!state) {
@@ -89,7 +91,8 @@ export const App = () => {
       .finally(() => this.setState({ loader: false }));
   };
 
-  render() {
+  render();
+  {
     const { status, message, gallery, loader, showBtn, selected } = this.state;
     return (
       <>
